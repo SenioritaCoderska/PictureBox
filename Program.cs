@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -8,6 +9,9 @@ namespace PictureBox
 {
     static class Program
     {
+
+        public static string applicationRecordFilePath = Path.Combine(Environment.CurrentDirectory, "PicturePath.json");
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
