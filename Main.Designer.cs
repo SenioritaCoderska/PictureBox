@@ -1,4 +1,4 @@
-﻿namespace PictureBox
+﻿namespace PictureBoxApp
 {
     partial class Main
     {
@@ -30,6 +30,7 @@
         {
             this.pbPic = new System.Windows.Forms.PictureBox();
             this.btnBrowse = new System.Windows.Forms.Button();
+            this.btnRemove = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbPic)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,11 +53,23 @@
             this.btnBrowse.UseVisualStyleBackColor = true;
             this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
+            // btnRemove
+            // 
+            this.btnRemove.AccessibleRole = System.Windows.Forms.AccessibleRole.IpAddress;
+            this.btnRemove.Location = new System.Drawing.Point(297, 112);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(75, 37);
+            this.btnRemove.TabIndex = 2;
+            this.btnRemove.Text = "Remove a pic";
+            this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 161);
+            this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.pbPic);
             this.MaximumSize = new System.Drawing.Size(400, 500);
@@ -73,6 +86,7 @@
 
         private System.Windows.Forms.PictureBox pbPic;
         private System.Windows.Forms.Button btnBrowse;
+        private System.Windows.Forms.Button btnRemove;
     }
 }
 

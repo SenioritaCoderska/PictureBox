@@ -2,7 +2,7 @@
 using System.IO;
 using Newtonsoft.Json;
 
-namespace OpenHR
+namespace PictureBoxApp
 {
     public class FileHelper<T> where T : new()
     {
