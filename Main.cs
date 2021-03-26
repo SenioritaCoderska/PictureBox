@@ -36,8 +36,7 @@ namespace PictureBoxApp
         }
         private void btnRemove_Click(object sender, EventArgs e)
         {
-            //Removeimage from memory alocation
-            pbPic.Image.Dispose();
+
             //assigne null to image location
             pbPic.ImageLocation = null;
             // write null path in application file
